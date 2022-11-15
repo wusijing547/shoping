@@ -1,0 +1,295 @@
+/* 版心 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.style_red {
+  color: #c81623;
+}
+/* 字体声明 */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?20ju7x');
+  src:  url('../fonts/icomoon.eot?20ju7x#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?20ju7x') format('truetype'),
+    url('../fonts/icomoon.woff?20ju7x') format('woff'),
+    url('../fonts/icomoon.svg?20ju7x#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* 快捷导航栏 */
+.shortcut {
+  height: 31px;
+  line-height: 31px;
+  background-color: #f1f1f1;
+}
+.shortcut .left {
+  float: left;
+}
+.shortcut h5 {
+  color: #666666;
+  font-weight: 400;
+}
+.shortcut .right {
+  float: right;
+}
+.shortcut .right ul li {
+  float: right;
+}
+.shortcut .right ul li::after {
+  content: '|';
+  font-size: 12px;
+}
+.shortcut .right ul li:first-child::after {
+  content: '';
+}
+.shortcut .right ul li a {
+  padding: 0 15px;
+}
+
+.shortcut .right ul li a.xiala::after { 
+  padding-left: 10px;
+  font-family: 'icomoon';
+  font-size: 12px;
+  content: '';
+}
+
+/* header部分 */
+.header .w {
+  position: relative;
+  height: 154px;
+
+}
+/* logo */
+.header h1 a {
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 175px;
+  height: 59px;
+  font-size: 0;
+  background: url('../images/logo.png') no-repeat;
+}
+/* 搜索框 */
+.header .search {
+  position: absolute;
+  top: 26px;
+  left: 348px;
+  width: 540px;
+  height: 37px;
+  border: 2px solid #b1191a;
+}
+.search .ipt{
+  float: left;
+  width: 454px;
+  height: 33px;
+  border: none;
+  font-size: 14px;
+  padding: 0 10px;
+  outline: none;
+}
+.search .btn {
+  position: absolute;
+  top: -1px; 
+  right: -1px;
+  border: none ;
+  height: 35px;
+  width: 82px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #b1191a;
+}
+/* 关键词 */
+ .hotwords {
+  position: absolute;
+  top: 67px;
+  left: 348px;
+}
+ .hotwords ul li {
+  float: left;
+}
+.hotwords ul li a {
+  padding: 0 12px;
+  font-size: 12px;
+}
+/* 购物车 */
+.cart {
+  position: absolute;
+  top: 26px;
+  right: 63px;
+  width: 142px;
+  height: 37px;
+  line-height: 37px;
+  padding: 0 19px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+.cart::before {
+  
+  font-family: 'icomoon';
+  content: '\e93a';
+  padding-right: 6px;
+  color: #b1191a;
+}
+.cart::after {
+  
+  font-family: 'icomoon';
+  content: '\e91d';
+  padding-left: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.cart .count {
+  position: absolute;
+  top: -6px;
+  left: 104px;
+  height: 15px;
+  /* 要指定line-hight,否则继承祖先的 */
+  line-height: 15px;   
+  padding: 0px 6px;
+  background-color: #e60012;
+  color: #fff;
+  font-size: 8px;
+  border-radius: 7px 7px 7px 0;
+}
+/* 导航栏 */
+.nav {
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 2px solid #b1191a;
+}
+/* 下拉菜单 */
+.nav .dropdown {
+  float: left;
+  width: 210px;
+  color: #fff;
+}
+.nav .dropdown dt {
+  text-align: center;
+  font-size: 16px;
+  background-color: #b1191a;
+}
+
+.nav .dropdown dd {
+  display:block;
+  position: relative;
+  height: 31px;
+  line-height: 31px;
+  padding-left: 12px;
+  background-color: #c81623;
+  text-align: left;
+  border-left: 1px solid transparent;
+}
+.nav .dropdown dd:hover {
+  background-color: #fff;
+  border-left: 1px solid #c81623;
+}
+.nav .dropdown dd:last-child:hover {
+  border-bottom: 1px solid #c81623;
+}
+.nav .dropdown dd:hover a{
+  color: #c81623;
+}
+.nav .dropdown dd::after {
+  position: absolute;
+  font-family: 'icomoon';
+  content: '\e91d';
+  right: 8px;
+  font-size: 14px;
+}
+.nav .dropdown dd a {
+  font-size: 14px;
+  color: #fff;
+}
+/* 导航栏选项 */
+.nav .navitems {
+  float: left;
+  margin-left: 14px;
+}
+.nav .navitems li {
+  float: left;
+}
+.nav .navitems li a {
+  padding: 0 27px;
+  font-size: 16px;
+}
+/* 头部header结束 */
+
+/* 尾部footer 开始*/
+.footer {
+  height: 417px;
+  margin-top: 30px;
+  background-color: #f5f5f5;
+}
+/* 服务模块 */
+.mod_service {
+  height: 109px;
+  border-bottom: 1px solid #ccc;
+  cursor: default;
+}
+.mod_service ul li {
+  position: relative;
+  float: left;
+  width: 235px;
+  padding: 30px 36px;
+  font-size: 12px;
+}
+/* .mod_service img {
+  float: left;
+} */
+.service_txt {
+  position: absolute;
+  top: 36px;
+  left:95px;
+}
+.service_txt h5 {
+  font-size: 14px;
+}
+/* 帮助模块 */
+.mod_help {
+  height: 188px;
+  padding: 20px 52px;
+  border-bottom: 1px solid #ccc;
+  cursor: default;
+}
+.mod_help dl {
+  float: left;
+  margin-right: 118px;
+}
+.mod_help dl:last-child {
+  text-align: center;
+  margin-right: 0;
+}
+
+.mod_help dl dt {
+  margin-bottom: 7px;
+  font-size: 16px;
+  color: #333333;
+}
+/* 版权模块 */
+.mod_copyright {
+  height: 119px;
+  text-align: center;
+  cursor: default;
+}
+.mod_copyright ul {
+  margin: 20px 0px 7px 100px;
+}
+.mod_copyright ul li {
+  float: left;
+}
+.mod_copyright ul li a {
+  padding: 0 17px;
+}
+.mod_copyright ul li::after {
+  content: "|";
+  font-size: 12px;
+}
+.mod_copyright ul li:last-child::after{
+  content: '';
+}
+/* 尾部foot 结束 */
